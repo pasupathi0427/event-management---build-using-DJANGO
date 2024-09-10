@@ -26,14 +26,35 @@ This is a hands-on event management web application developed using **Django**, 
    cd event-management
 
 
-### 2. Add the Repository to Google Drive:
-- Upload the cloned repository folder to your Google Drive.
+### 2. **Create a Virtual Environment**:
+```bash
+   python -m venv env
+   On Mac use     - source env/bin/activate
+   On Windows use - `env\Scripts\activate`
 
-### 3. Open the  File in Google Colab:
-- Navigate to [Google Colab](colab.research.google.com).
-- Click on `File` > `Open Notebook` > `Upload`.
-- Select the (.ipynb) file from the cloned repository in your Google Drive and open it.
+
+### 3. Install Dependencies: Install the required packages from requirements.txt:
+- Open Cmd and move on to you virtual environment 
+- type   `pip insall -r requirements.txt` .
+
+### 4. Run Migrations:
+- Open Cmd and move on to you virtual environment 
+- type   `python manage.py migrate` .
+
+### 5. Start the Server:
+- Open Cmd and move on to you virtual environment 
+- type  `python manage.py runserver` .
+
+### 5. Acces the Application:
+- copy & paste the url in browser `http://127.0.0.1:8000/` 
+
+
+## Project Structure
+- **Authentication**: User login, logout, and registration.
+- **CRUD Operations**: Manage event data using models and forms.
+- **File Downloads**: Export data to PDF, CSV, or text files.
+- **Templates**: Custom templates with reusable blocks and static files handling.
   
-## Acknowledgments
-- Dataset sources: Kaggle 
-- Inspiration: Inspired from Youtube resources .
+## Acknowledgments and Gratitude
+- Codemy YouTube Channel: For a hands-on approach to learning Django.
+- Corey Schafer YouTube Channel: For deep dives into Django concepts and best practices.
