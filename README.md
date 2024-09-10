@@ -34,8 +34,9 @@ This is a hands-on event management web application developed using **Django**, 
 
 
 ### 3. Install Dependencies: Install the required packages from requirements.txt:
-- Open Cmd and move on to you virtual environment 
-- type   `pip insall -r requirements.txt` .
+- Open Cmd and move on to you virtual environment
+-  ```bash
+      pip insall -r requirements.txt .
 
 ### 4. Run Migrations:
 - Open Cmd and move on to you virtual environment 
