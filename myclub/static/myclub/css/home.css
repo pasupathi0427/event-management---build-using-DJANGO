@@ -1,0 +1,46 @@
+/* Add this to your CSS file or inside <style> tags in your HTML template */
+
+.calendar-container {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.calendar-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-container th,
+.calendar-container td {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.calendar-container th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.calendar-container td {
+    border: 1px solid #dee2e6;
+    height: 30px; /* Adjust based on the height you want */
+    vertical-align: top;
+}
+
+.calendar-container .today {
+    background-color: #e9ecef;
+    border-radius: 50%;
+}
+
+.calendar-container .weekend {
+    color: #dc3545;
+}
+
+.calendar-container .event-day {
+    background-color: #e2e6ea;
+    border-radius: 50%;
+}

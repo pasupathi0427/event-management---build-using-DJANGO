@@ -1,0 +1,35 @@
+{% extends 'myclub/base.html' %}
+{% load static %}
+{% block content %}
+
+
+<br><br>
+<div class="container">
+  <h1 class="mb-3" style="text-align: center;">Venue...</h1>
+
+  <div class="card-header">
+    {{venues.name}}
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+      <strong>address </strong> {{venues.address}} <br>
+      <strong>phone : </strong>{{venues.phone}} <br>
+      <strong>Web Address : </strong>{{venues.web}} <br>
+      <strong>Email Address : </strong>{{venues.email}} <br>
+      {% if venues.image %}
+
+    <img src="{{venues.image.url}}" alt="vellore fort" width="300px" height="400px">  
+
+      {% else %}
+      
+      <img src="{% static 'myclub/images/default.png' %}" alt="vellore fort" width="300px" height="400px">  
+
+      {% endif %}
+    </p>
+  </div>
+</div>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'myclub/base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'myclub/css/home.css' %}">
+
+<div class="container text-center mt-3">
+    <h1 class="display-4">Events for {{ month }} {{ year }}</h1>
+    <br>
+    <h2 class="display-5">Calendar</h2>
+    <br>
+    <div class="calendar-container p-4 shadow rounded ">
+        {{ calendar|safe }}
+    </div>
+    
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'myclub/base.html' %}
+
+{% block content %}
+
+{% for event in events %}
+<br><br>
+<div class="container">
+
+    <div class="card">
+        <div class="card-header">
+            {{event.name}}
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{event.Venue.name}}</h5>
+          <p class="card-text">
+           <strong>Date : </strong> {{event.event_date}} <br>
+           <strong>Manager : </strong>{{event.manager}} <br>
+           <strong>Description : </strong> {{event.description}} <br>
+           <strong>Attendees : </strong>
+           {% for  user in  event.attendees.all  %} 
+               <ul>
+                <li> {{user}} </li>
+               </ul> 
+           {% endfor %}
+          </p>
+          <hr>
+          <a href="{% url 'update-event' event.id %}" class="btn btn-secondary ">Update</a>
+        </div>
+      </div>
+      {% endfor %}
+
+</div>
+
+
+{% endblock %}
